@@ -7047,7 +7047,7 @@ textarea.form-control-lg {
   display: inline !important;
 }
 
-.d-inline-block, .about-me .body .right, .about-me .body .left {
+.d-inline-block, .about-me .body .right {
   display: inline-block !important;
 }
 
@@ -7773,7 +7773,7 @@ textarea.form-control-lg {
   padding: 0.25rem !important;
 }
 
-.p-2, .animation, .about-me .body .right, .about-me .body .left {
+.p-2, .animation, .about-me .body .right {
   padding: 0.5rem !important;
 }
 
@@ -8146,7 +8146,7 @@ textarea.form-control-lg {
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-white, footer, .about-me .body .left, .hero, .logo, nav * {
+.text-white, footer, .hero, .logo, nav * {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
@@ -8192,7 +8192,7 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
 }
 
-.bg-primary, .animation, .title, .about-me .body .left {
+.bg-primary, .animation, .title {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -8301,7 +8301,7 @@ textarea.form-control-lg {
   pointer-events: auto !important;
 }
 
-.rounded, .about-me .body .left {
+.rounded {
   border-radius: var(--bs-border-radius) !important;
 }
 
