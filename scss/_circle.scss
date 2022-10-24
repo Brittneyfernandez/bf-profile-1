@@ -1,0 +1,44 @@
+
+$circle-size: 15rem;
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @extend .bg-primary;
+    z-index: 1000;
+    border-radius: 50%;
+    .logo1 {
+        font-size: 10rem;
+        @extend .text-white;
+        width: $circle-size;
+        height: $circle-size;
+        border-radius: 50%;
+        border: 4px solid white;
+        position: relative;
+        @extend .font1;
+      
+        .b {
+          position: absolute;
+          top: 40%;
+          left: 40%;
+          transform: translate(-50%, -50%);
+          @extend .text-black;
+        }
+        .f {
+          position: absolute;
+          top: 65%;
+          left: 65%;
+          transform: translate(-50%, -50%);
+        }
+      
+      
+      }
+}
+
+.circle2  {
+    @extend .bg-secondary;
+}
+
+
+
+  

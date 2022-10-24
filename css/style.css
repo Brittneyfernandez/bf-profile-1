@@ -11,7 +11,7 @@
   font-family: "MinionPro-Regular";
   src: url("./MinionPro-Regular.otf") format("opentype");
 }
-.font1, footer, .logo {
+.font1, .circle .logo1, footer, .logo {
   font-family: "AbrilFatface-Regular";
 }
 
@@ -8141,12 +8141,12 @@ textarea.form-control-lg {
   color: rgba(var(--bs-custom-color-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-black, .about-me .body .right h1, .about-me .body .right .h1, .logo .b {
+.text-black, .circle .logo1 .b, .about-me .body .right h1, .about-me .body .right .h1, .logo .b {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-white, footer, .hero, .logo, nav * {
+.text-white, .circle .logo1, footer, .hero, .logo, nav * {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
@@ -8192,12 +8192,12 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
 }
 
-.bg-primary, .animation, .title {
+.bg-primary, .circle, .animation, .title {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-secondary {
+.bg-secondary, .circle2 {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -11084,6 +11084,34 @@ footer .name {
 
 .example {
   display: none;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-radius: 50%;
+}
+.circle .logo1 {
+  font-size: 10rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  border: 4px solid white;
+  position: relative;
+}
+.circle .logo1 .b {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.circle .logo1 .f {
+  position: absolute;
+  top: 65%;
+  left: 65%;
+  transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=style.css.map */
