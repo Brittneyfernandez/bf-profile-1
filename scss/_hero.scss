@@ -1,0 +1,48 @@
+
+
+
+.hero {
+    // @extend .bg-black;
+    // background-image: url('../img/bg-vid.mov');
+    @extend .text-white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .hero-text {
+        position: absolute;
+        bottom: 10%;
+        padding-left: clamp(1rem, 5vw, 5rem);
+        @extend .display-4;
+        @extend .fw-bolder;
+        transform: translateX(-10vw);
+        .name {
+            @extend .text-primary;
+            @extend .display-3;
+            @extend .fw-bolder;
+            text-transform: uppercase;
+        }
+        @media(max-width: 575px ) {
+            transform: translateX(-2vw);
+            white-space: wrap;
+            .name {
+                font-size: 3rem;
+            }
+        }
+        @media(max-width: 500px ) {
+            transform: translateX(12vw);
+            white-space: wrap;
+        }
+       
+    }
+  }
+
+  .b-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }

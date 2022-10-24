@@ -1,0 +1,84 @@
+.work {
+    background-color: $secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        margin: 0;
+        border-bottom: 6px solid $primary;
+        display: inline-block;
+        padding: 1rem 3rem 0rem 3rem;
+        @extend .display-4;
+        @extend .fw-bolder;
+    }
+   .gallery {
+    padding: 2rem;
+    @extend .row;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    .card {
+        @extend .col-12;
+        @extend .col-md-6;
+        @extend .col-lg-4;
+        overflow: hidden;
+        img {
+           
+            height: 100%;
+            object-fit: contain;
+            max-height: 300px;
+            padding-top: 1rem;
+        }
+        img:hover {
+            transform: scale(1.1);
+            transition: all 0.5s ease;
+        }
+    
+    }
+   }
+}
+
+.title  {
+    display: flex;
+    justify-content: center;
+    @extend .bg-primary;
+    h1 {
+   
+        border-bottom: 6px solid $secondary;
+        display: inline-block;
+        padding: 1rem 3rem 0rem 3rem;
+        @extend .display-4;
+        @extend .fw-bolder;
+        justify-self: center;
+        text-align: center;
+    }
+}
+.animation {
+  
+    position: relative;
+    @extend .bg-primary;
+    @extend .p-2;
+    h1 {
+        margin: 0;
+        border-bottom: 6px solid $primary;
+        display: inline-block;
+        padding: 1rem 3rem 0rem 3rem;
+        @extend .display-4;
+        @extend .fw-bolder;
+        justify-self: center;
+        
+    }
+    .vid {
+
+        max-height: 500px;
+        // position: relative;
+        // object-fit: contain;
+        // background-color: $primary;
+        video {
+            max-height: 400px;
+            object-fit: contain;
+        }
+    }
+    
+}

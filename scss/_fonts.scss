@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "AbrilFatface-Regular";
+  src: url("./fonts/AbrilFatface-Regular.TTF") format("truetype");
+}
+@font-face {
+    font-family: "Gunterz-Black";
+    src: url("./fonts/Gunterz-Black.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "MinionPro-Regular";
+    src: url("./MinionPro-Regular.otf") format("opentype");
+  }
+
+
+
+
+.font1 {
+  font-family: "AbrilFatface-Regular";
+}
+.font2 {
+  font-family: "Gunterz-Black";
+}
+.font3 {
+  font-family: "MinionPro-Regular";
+}
