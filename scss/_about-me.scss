@@ -1,0 +1,37 @@
+.about-me {
+    .body{
+        @extend .p-5;
+        @extend .d-flex;
+
+        .left{
+            @extend .text-white;
+            @extend .bg-primary;
+            @extend .p-2;
+            @extend .d-inline-block;
+            @extend .rounded;
+            img{
+                border-radius: 50%;
+                width: 300px;
+                height: 300px;
+            }
+        }
+        .right {
+            @extend .p-2;
+            @extend .d-inline-block;
+            @extend .px-5;
+           
+           
+            h1 {
+                @extend .display-4;
+                @extend .fw-bolder;
+                @extend .text-black;
+                @extend .text-center;
+            }
+            p {
+                @extend .text-start;
+        
+            }
+        }
+    }
+   
+}
