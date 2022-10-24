@@ -59,7 +59,7 @@ circles.forEach(circle => {
     circle.el.classList.add('circle-fall');
     setTimeout(() => {
         fall(circle);
-    }, Math.floor(Math.random() * 2000) + 1000);
+    }, Math.floor(Math.random() * 2000) + 500);
     
 });
 
