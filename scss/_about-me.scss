@@ -13,6 +13,7 @@
                 border-radius: 50%;
                 width: 300px;
                 height: 300px;
+                background-color: black;
             }
         }
         .right {
@@ -20,17 +21,26 @@
             @extend .d-inline-block;
             @extend .px-5;
            
+            .words{
+                background-color: white;
+                border-radius: 20px;
+                @extend .p-3;
+                @extend .px-5;
+                h1 {
+                    @extend .display-4;
+                    @extend .fw-bolder;
+                    @extend .text-black;
+                    @extend .text-center;
+                    text-transform: capitalize;
+                }
+                p {
+                    @extend .text-start;
+                    @extend .fs-5;
+                  
+            
+                }
+            }
            
-            h1 {
-                @extend .display-4;
-                @extend .fw-bolder;
-                @extend .text-black;
-                @extend .text-center;
-            }
-            p {
-                @extend .text-start;
-        
-            }
         }
     }
    

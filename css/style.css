@@ -543,13 +543,13 @@ progress {
   }
 }
 
-.display-4, .animation h1, .animation .h1, .title h1, .title .h1, .work h1, .work .h1, .about-me .body .right h1, .about-me .body .right .h1, .hero .hero-text {
+.display-4, .animation h1, .animation .h1, .title h1, .title .h1, .work h1, .work .h1, .about-me .body .right .words h1, .about-me .body .right .words .h1, .hero .hero-text {
   font-size: calc(1.475rem + 2.7vw);
   font-weight: 300;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
-  .display-4, .animation h1, .animation .h1, .title h1, .title .h1, .work h1, .work .h1, .about-me .body .right h1, .about-me .body .right .h1, .hero .hero-text {
+  .display-4, .animation h1, .animation .h1, .title h1, .title .h1, .work h1, .work .h1, .about-me .body .right .words h1, .about-me .body .right .words .h1, .hero .hero-text {
     font-size: 3.5rem;
   }
 }
@@ -7777,7 +7777,7 @@ textarea.form-control-lg {
   padding: 0.5rem !important;
 }
 
-.p-3 {
+.p-3, .about-me .body .right .words {
   padding: 1rem !important;
 }
 
@@ -7814,7 +7814,7 @@ textarea.form-control-lg {
   padding-left: 1.5rem !important;
 }
 
-.px-5, .about-me .body .right {
+.px-5, .about-me .body .right .words, .about-me .body .right {
   padding-right: 3rem !important;
   padding-left: 3rem !important;
 }
@@ -7989,7 +7989,7 @@ textarea.form-control-lg {
   font-size: calc(1.275rem + 0.3vw) !important;
 }
 
-.fs-5 {
+.fs-5, .about-me .body .right .words p {
   font-size: 1.25rem !important;
 }
 
@@ -8025,7 +8025,7 @@ textarea.form-control-lg {
   font-weight: 600 !important;
 }
 
-.fw-bolder, .animation h1, .animation .h1, .title h1, .title .h1, .work h1, .work .h1, .about-me .body .right h1, .about-me .body .right .h1, .hero .hero-text .name, .hero .hero-text {
+.fw-bolder, .animation h1, .animation .h1, .title h1, .title .h1, .work h1, .work .h1, .about-me .body .right .words h1, .about-me .body .right .words .h1, .hero .hero-text .name, .hero .hero-text {
   font-weight: bolder !important;
 }
 
@@ -8045,7 +8045,7 @@ textarea.form-control-lg {
   line-height: 2 !important;
 }
 
-.text-start, .about-me .body .right p {
+.text-start, .about-me .body .right .words p {
   text-align: left !important;
 }
 
@@ -8053,7 +8053,7 @@ textarea.form-control-lg {
   text-align: right !important;
 }
 
-.text-center, .about-me .body .right h1, .about-me .body .right .h1 {
+.text-center, .about-me .body .right .words h1, .about-me .body .right .words .h1 {
   text-align: center !important;
 }
 
@@ -8141,7 +8141,7 @@ textarea.form-control-lg {
   color: rgba(var(--bs-custom-color-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-black, .circle .logo1 .b, .about-me .body .right h1, .about-me .body .right .h1, .logo .b {
+.text-black, .circle .logo1 .b, .about-me .body .right .words h1, .about-me .body .right .words .h1, .logo .b {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
 }
@@ -10988,6 +10988,14 @@ nav li {
   border-radius: 50%;
   width: 300px;
   height: 300px;
+  background-color: black;
+}
+.about-me .body .right .words {
+  background-color: white;
+  border-radius: 20px;
+}
+.about-me .body .right .words h1, .about-me .body .right .words .h1 {
+  text-transform: capitalize;
 }
 body, html {
   min-height: 100vh;
