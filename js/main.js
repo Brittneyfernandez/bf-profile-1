@@ -1,3 +1,4 @@
+let clicked = false;
 function createCircle() {
     const el = document.createElement('div');
     el.classList.add('circle');
@@ -64,7 +65,11 @@ circles.forEach(circle => {
 });
 
 function fall(circle) {
+
     circle.y += 10;
+    if (clicked){
+        circle.y += document.body.scrollHeight;
+    }
     if (circle.y <= document.body.scrollHeight) {
         circle.el.style.transform = `translate(${circle.x}px, ${circle.y}px) rotate(${circle.r}deg)`;
         requestAnimationFrame(() => fall(circle));
@@ -73,3 +78,7 @@ function fall(circle) {
         circle.el.style.display = 'none';
     }
 }
+
+document.addEventListener('click', (e) => {
+    clicked = true;
+});
