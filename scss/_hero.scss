@@ -20,6 +20,10 @@
     display: flex;
     justify-content: center;
     position: relative;
+    img {
+        border-radius: 50%;
+        background-color: black;
+    }
     .hero-text {
         position: absolute;
         bottom: 10%;
