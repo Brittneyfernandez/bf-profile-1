@@ -11153,4 +11153,44 @@ footer .name {
   transform: translate(-50%, -50%);
 }
 
+.image-viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.image-viewer img {
+  width: 100%;
+  height: 80vh;
+  object-fit: contain;
+}
+.image-viewer .img-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-viewer .img-container img {
+  width: 100%;
+  height: 80vh;
+  object-fit: contain;
+}
+.image-viewer .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
