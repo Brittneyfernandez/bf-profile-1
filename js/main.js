@@ -146,19 +146,22 @@ class ClassWatcher {
 }
 
 targetNodes.forEach(targetNode => {
+    const carousel = document.querySelector('#carouselExampleControls');
     window.addEventListener('scroll', () => {
-        const carousel = document.querySelector('#carouselExampleControls');
+        
         if (!isScrolledIntoView(carousel)) {
             targetNode.querySelector('video').pause();
         } else {
-            targetNode.querySelector('#carouselExampleControls .active video')?.play();
+            document.querySelector('#carouselExampleControls .active video')?.play();
         }
     });
 const classWatcher = new ClassWatcher( targetNode, 'active', () => {
 
     const video = targetNode.querySelector('video');
     video.currentTime = 0;
-    video.play();
+    if (isScrolledIntoView(carousel)) {
+        video.play();
+    }
 }, () => {
     const video = targetNode.querySelector('video');
     video.currentTime = 0;
