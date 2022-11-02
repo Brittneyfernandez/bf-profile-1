@@ -152,7 +152,10 @@ targetNodes.forEach(targetNode => {
         if (!isScrolledIntoView(carousel)) {
             targetNode.querySelector('video').pause();
         } else {
-            document.querySelector('#carouselExampleControls .active video')?.play();
+            const video = document.querySelector('#carouselExampleControls .active video');
+            if (!video.paused) {
+                video?.play();
+            }
         }
     });
 const classWatcher = new ClassWatcher( targetNode, 'active', () => {
