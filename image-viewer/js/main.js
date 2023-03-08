@@ -13,3 +13,8 @@ img.src = `../img/${queryString.get('file')}`;
 
 const p = document.querySelector('p');
 p.textContent = queryString.get('file');
+
+document.addEventListener('click', () => {
+   // back to last page
+   window.history.back();
+})

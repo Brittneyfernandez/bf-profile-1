@@ -83,6 +83,11 @@ document.addEventListener('click', (e) => {
     clicked = true;
 });
 
+// listen for scroll on document
+document.addEventListener('scroll',() => {
+    clicked = true;
+})
+
 document.querySelector('.carousel-control-prev').addEventListener('click', (e) => {
     console.log( document.querySelector('.carousel-item.active video'))
     document.querySelector('.carousel-item.active video').play();
